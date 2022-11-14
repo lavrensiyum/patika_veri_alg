@@ -1,0 +1,68 @@
+|---------------| // baktığımız bölge
+[22,27,16,2,18,6]	// 2 ile 22 yer değiştirecek			// n. adım		// burada 6 işlem ile en küçüğü bulduk
+[>>,__,__,<,__,_] // sonraki adımda değiştirilecek sayılar
+
+  |-------------|	// 5 işlem yapıldı
+[2,27,16,27,18,6]		// (n-1). adım
+[_,>>,__,__,__,<] 
+
+    |-----------|	// 4 işlem yapıldı
+[2,6,16,22,18,27] 	// (n-2). adım
+[_,_,^^,__,__,__] 
+
+       |--------|	// 3 işlem yapıldı
+[2,6,16,22,18,27] 	// (n-3). adım
+[_,_,__,>>,<<,__] 
+
+          |-----|	// 2 işlem yapıldı
+[2,6,16,22,18,27] 	// (n-4). adım
+[_,_,__,__,^^,__] 
+
+
+[2,6,16,22,18,27]		// döngü tamamlandı // (+1)
+
+
+2) Big-O notasyonu: 
+   1. adımda yazdığımız adımları yazıp toplayalım,
+>> n + (n-1) + (n-2) + (n-3) + (n-4) + 1
+   yukarıdaki sıralama '1-n' sayıları dahil bütün terimlerin toplamı formülüne uygun.
+			 _____	
+   n x (n + 1)	 n^(2) + n
+>> -----------  =  ---------  =  bu formülde domine fonksiyon bizim Big-O notasyonumuz  =  n^(2)  = O(n^(2))	
+       2		     2
+
+
+3) Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+   Dizimizi yazalım:
+>> [22,27,16,2,18,6]
+   Average Case, sorgulanan sayının ortada olması ... DOĞRU
+   Worst Case, sorgulanan sayının en sonda olması ... YANLIŞ
+   Best Case, sorgulanan sayının ilk başta olması ... YANLIŞ
+>> Cevap = Average Case
+
+
+
+4) [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+|------------------|
+[7,3,5,8,2,9,4,15,6]	// n. basamak
+[>,_,_,_,<,_,_,__,_]
+
+  |----------------|
+[2,3,5,8,7,9,4,15,6]	// (n-1). basamak
+[_,^,_,_,_,_,_,__,_]
+
+    |--------------|
+[2,3,5,8,7,9,4,15,6]	// (n-2). basamak
+[_,_,>,_,_,_,<,__,_]
+
+      |------------|
+[2,3,4,8,7,9,5,15,6]	// (n-3). basamak
+[_,_,_,>,_,_,<,__,_]
+
+        |----------|
+[2,3,4,8,7,9,5,15,6]	// (n-4). basamak
+[_,_,_,>,_,_,<,__,_]
+
+[2,3,4,5,7,9,8,15,6]	// 4. adım sonunda oluşan dizi
