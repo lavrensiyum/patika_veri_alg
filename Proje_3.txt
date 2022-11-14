@@ -16,35 +16,35 @@ ________________________________________________________________________________
 >>
 >>			   	  \	
 >>			  
->>			          7
+>>			            7
 >>			 
 >>				  /	
 >>
->>				5
+>>			       5
 >>	
->>			    /   \
+>>			    /     \
 >>
->>			  1	    8
+>>			  1	     8
 >>
->>				   /    
+>>				  /    
 >>		
->>				  3
+>>			       3
 >>			
->>				    \
+>>				   \
 >>				
 >>				      6
 >>				
->>				    /   \
+>>				   /      \
 >>
->>				   0	   9
+>>				0	     9
 >>					
->>				        /
+>>				         /
 >>
->>				       4
+>>				      4
 >>
->>				     /
+>>				   /
 >>
->>				    2
+>>			        2
 
 
 	
@@ -60,8 +60,7 @@ ___________________________________________________________________
 
 >> 	   5
 >>	 /   \ 		==> Edge, Türkçesinde kenar olarak geçse de, 'node' yani düğümleri birbirine bağlayan ip.
->>   1       8 		==> 1 ve 8, 5 key'ine bağlı 'sibling' (kardeş) olarak adlandırabiliriz. Eğer bunlardan başka başka sibling oluşmadıysa (yani son node iseler), Leaf node olarak da adlandırabiliriz.
-				    Ayrıca buradaki 5: parent, 1 ve 8 child, ve parent-child üçlüsüne subtree ifadelerini kullanabiliriz.
+>>     1       8 		==> 1 ve 8, 5 key'ine bağlı 'sibling' (kardeş) olarak adlandırabiliriz. Eğer bunlardan başka başka sibling oluşmadıysa (yani son node iseler), Leaf node olarak da adlandırabiliriz. Ayrıca buradaki 5: parent, 1 ve 8 child, ve parent-child üçlüsüne subtree ifadelerini kullanabiliriz.
 
 
 
@@ -72,8 +71,8 @@ ___________________________________________________________________
 >>		.    |
 >>		.    |	// Root ile en aşağıdaki node ifadelerinin arasındaki uzaklığa 'Height of the tree' yani ağacın uzunluğu olarak adlandırıyoruz.
 >>		.    |
->>	  /        |
->>    2          ^
+>>	      /      |
+>>          2        ^
 
 
 
