@@ -1,3 +1,6 @@
+1) [22,27,16,2,18,6] -> Insertion Sort 
+  Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
 |---------------| // baktığımız bölge
 [22,27,16,2,18,6]	// 2 ile 22 yer değiştirecek			// n. adım		// burada 6 işlem ile en küçüğü bulduk
 [>>,__,__,<,__,_] // sonraki adımda değiştirilecek sayılar
@@ -19,27 +22,32 @@
 [_,_,__,__,^^,__] 
 
 
-[2,6,16,22,18,27]		// döngü tamamlandı // (+1)
+[2,6,16,22,18,27]              // döngü tamamlandı // (+1)
+
+
 
 
 2) Big-O notasyonu: 
+
    1. adımda yazdığımız adımları yazıp toplayalım,
 >> n + (n-1) + (n-2) + (n-3) + (n-4) + 1
    yukarıdaki sıralama '1-n' sayıları dahil bütün terimlerin toplamı formülüne uygun.
-			 _____	
-   n x (n + 1)	 n^(2) + n
->> -----------  =  ---------  =  bu formülde domine fonksiyon bizim Big-O notasyonumuz  =  n^(2)  = O(n^(2))	
-       2		     2
+                   _____	
+   n x (n + 1)	   n^(2) + n
+>> -----------  =  ---------  =  bu formülde domine fonksiyon, bizim Big-O notasyonumuz  =  n^(2)  = O(n^(2))	
+        2	       2
+
+
 
 
 3) Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
 
    Dizimizi yazalım:
 >> [22,27,16,2,18,6]
-   Average Case, sorgulanan sayının ortada olması ... DOĞRU
    Worst Case, sorgulanan sayının en sonda olması ... YANLIŞ
    Best Case, sorgulanan sayının ilk başta olması ... YANLIŞ
 >> Cevap = Average Case
+
 
 
 
