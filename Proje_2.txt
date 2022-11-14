@@ -1,0 +1,38 @@
+Proje 2
+______________________________________________________________________________________________________________________
+
+
+
+ 1) [16,21,11,8,12,22] -> Merge Sort
+
+    Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+    Big-O gösterimini yazınız.
+______________________________________________________________
+
+  1-Öncelikle yukarıda verilen diziyi ikiye bölelim
+>> [16, 21, 11]       &    [8, 12, 22]
+
+  2-Daha sonra sağ ve soldaki parçaları tekrar ikiye bölelim ve kalan fazladan diziyi ayrı yazalım
+>> [16, 21], [11]     &    [8, 12], [22]
+
+  3-Burada tek kalan dizileri şimdilik gizleyelim ve kalan ikili dizilerle işleme devam edelim
+>> [16, 21]           &    [8, 12]
+>> [16], [21]         &    [8], [12]	// dizideki sayılar zaten küçükten büyüğe sıralı, tekrar birleştiriliyor...
+>> [16,21]            &    [8, 12]
+
+  4-Üçüncü adımda gizlediğimiz sayıları tekrar yazalım
+>> [16, 21], [11]     &    [8, 12], [22]
+>> [11, 16, 21]       &    [8, 22, 12]
+
+  5- Elimizde son kalan iki diziyi de birleştirelim
+>> [8, 11, 12, 16, 21, 22]
+
+
+
+2) Big-O Gösterimi
+______________________________________________________________
+	Sayıları ikişer ikişer ayırdığımız için,
+	>> 2^(x) = n
+	>> O(nlogn)
+	Sonuç olarak logaritmik arttığı için, Time-Complex o(n) e benzediği için Big-O gösterimi O(nlogn) diyebiliriz.
+	
