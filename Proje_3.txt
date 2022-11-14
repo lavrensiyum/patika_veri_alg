@@ -1,0 +1,79 @@
+Proje 3
+
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+________________________________________________________________________________
+
+
+>>
+
+	Öncelikle bir root adı verilen başlangıç sayısını seçelim, bu sayı herhangi bir sayı olabilir
+>>0
+	Daha sonra sağdan sola artacak şekilde, dizimizdeki sayıları çifter çifter yerleştirelim. Ben burada ilk sayı olan 7 den başladım:
+
+
+>>
+>>			      0
+>>
+>>			   	  \	
+>>			  
+>>			          7
+>>			 
+>>				  /	
+>>
+>>				5
+>>	
+>>			    /   \
+>>
+>>			  1	    8
+>>
+>>				   /    
+>>		
+>>				  3
+>>			
+>>				    \
+>>				
+>>				      6
+>>				
+>>				    /   \
+>>
+>>				   0	   9
+>>					
+>>				        /
+>>
+>>				       4
+>>
+>>				     /
+>>
+>>				    2
+
+
+	
+
+
+Şimdi bu çizdiğimiz Binary Tree üzerinde bazı terimleri gösterelim
+___________________________________________________________________
+
+>> 	0 // Root, yani kök. Binary-Tree gösteriminde başladığımız sayı.
+
+
+
+
+>> 	   5
+>>	 /   \ 		==> Edge, Türkçesinde kenar olarak geçse de, 'node' yani düğümleri birbirine bağlayan ip.
+>>   1       8 		==> 1 ve 8, 5 key'ine bağlı 'sibling' (kardeş) olarak adlandırabiliriz. Eğer bunlardan başka başka sibling oluşmadıysa (yani son node iseler), Leaf node olarak da adlandırabiliriz.
+				    Ayrıca buradaki 5: parent, 1 ve 8 child, ve parent-child üçlüsüne subtree ifadelerini kullanabiliriz.
+
+
+
+>>	7 // Ağaçtaki her bir sayının, bir çember içinde olduğunu düşünün, bu çembere node yani düğüm deniyor. İçindeki sayıya da Key(anahtar).
+
+
+>>		0    ^
+>>		.    |
+>>		.    |	// Root ile en aşağıdaki node ifadelerinin arasındaki uzaklığa 'Height of the tree' yani ağacın uzunluğu olarak adlandırıyoruz.
+>>		.    |
+>>	  /        |
+>>    2          ^
+
+
+
